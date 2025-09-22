@@ -37,7 +37,7 @@ function Landingpage() {
         <h1 style={{textAlign:"center" , paddingTop:"10px"}}>Tools</h1>
         <Stack
   direction="row"
-  spacing={2}
+  spacing={4}
   sx={{
     justifyContent: "center",
     alignItems: "center",
@@ -61,7 +61,7 @@ function Landingpage() {
 <p>Your data is safe and secure with us, protected by advanced encryption.</p>
 </Box>
   <Box>
-    <img src="https://good-resume.com/wp-content/uploads/2017/03/Free-Beautiful-Resume-CV-Design-Template-PSD-File-1.jpg" alt="" height={"500px"} width={"450px"}/>
+    <img style={{paddingLeft:"100px"}} src="https://good-resume.com/wp-content/uploads/2017/03/Free-Beautiful-Resume-CV-Design-Template-PSD-File-1.jpg" alt="" height={"500px"} width={"450px"}/>
   </Box>
 </Stack>
       </section>
