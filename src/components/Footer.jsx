@@ -5,23 +5,29 @@ function Footer() {
     <section id="footer">
         
 <Stack
-  direction="row"
+  direction="column"
   spacing={3}
   sx={{
+    paddingTop:"10px",
+    paddingBottom:"10px",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor:"lightblue",
   }}
-> Contact Us 
-Resumebuilder@gmail.com 
-98653489
-
-Connect with Us 
-Designed & Built 
-Instagram 
-Twiter 
+> 
+<h2>Contact Us </h2>
+<h5>Resumebuilder@gmail.com </h5>
+<h5>9865348998</h5>
+<h2>
+  
+  Connect with Us 
+</h2>
+<h5>Designed & Built </h5>
+<h5>Instagram </h5>
+<h5>Twiter </h5>
 </Stack>
 
-      </section>
+  </section>
   )
 }
 

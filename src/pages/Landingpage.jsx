@@ -1,5 +1,6 @@
 import React from "react";
 import "./Landingpage.css";
+import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import Button from "@mui/material/Button";
 import Skeleton from "@mui/material/Skeleton";
@@ -27,7 +28,9 @@ function Landingpage() {
               your dream job with ease.
             </h2>
 
-            <Button sx={{marginBottom:"20px"}} variant="contained">Create My Resume</Button>
+            <Link to={'/resume'}><Button sx={{marginBottom:"20px"}} variant="contained">Create My Resume</Button></Link>
+
+            
             
           </Box>
         </Stack>
@@ -41,11 +44,18 @@ function Landingpage() {
   sx={{
     justifyContent: "center",
     alignItems: "center",
-    paddingTop:"15px"
+    paddingTop:"5px"
   }}
 >
   <Box>
-   <h2>Resume</h2>
+       <Stack
+  direction="column"
+  spacing={2}
+  sx={{
+    justifyContent: "center",
+  }}
+>
+  <h2>Resume</h2>
 <p>Create unlimited resumes with professional templates and easily edit them anytime.</p>
 
 <h2>Jobs</h2>
@@ -59,6 +69,9 @@ function Landingpage() {
 
 <h2>Security</h2>
 <p>Your data is safe and secure with us, protected by advanced encryption.</p>
+
+    </Stack>
+   
 </Box>
   <Box>
     <img style={{paddingLeft:"100px"}} src="https://good-resume.com/wp-content/uploads/2017/03/Free-Beautiful-Resume-CV-Design-Template-PSD-File-1.jpg" alt="" height={"500px"} width={"450px"}/>
@@ -78,11 +91,21 @@ function Landingpage() {
             textAlign: "center",
             justifyContent: "center",
             alignItems: "center",
-            paddingTop:"140px"
+            paddingTop:"50px"
           }}
         >
           <Box sx={{width:"40%",height:"450px"}}>
-<h3>Trusted by Professionals Worldwide</h3>
+             <Stack
+          direction="column"
+          spacing={2}
+          sx={{
+            textAlign: "center",
+            justifyContent: "center",
+            alignItems: "center",
+            fontSize:"18px",
+            paddingRight:"25px"
+          }}
+        ><h2>Trusted by Professionals Worldwide</h2>
 <p>At LiveCareer, we don’t just help you create resumes — we help you land the job. Whether you’re a seasoned professional or just starting out, our tools are designed to deliver real results.</p>
 
 <p>In fact, users who used LiveCareer reported getting hired an average of 48 days faster — based on a survey of 258 users.</p>
@@ -91,7 +114,8 @@ function Landingpage() {
 
 <p>Join thousands of job seekers worldwide who trust LiveCareer to showcase their skills and achievements. Start building your future today with a resume that gets noticed by top employers and recruiters.</p>
 
-          </Box>
+       </Stack>
+   </Box>
            
           <Box sx={{width:"40%",height:"450px" }}>
              
